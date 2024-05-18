@@ -23,6 +23,7 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    margin-top: 0%;
 }
 
 a {
@@ -58,6 +59,98 @@ a {
     color: var(--main-bg-color)
 }
 
+
+
+/****** logo ***********/
+
+.logo img{
+    width:80px;   
+    height:20px;
+    padding-top: 20px;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo li{
+    display: inline;
+    list-style-type: none;
+}
+
+
+.logo a:hover {
+    color: var(--main-color);
+  border-top: solid 2px var(--main-color);
+  padding-top: 12px;
+}
+
+
+/****** Info ***********/
+
+
+
+
+
+
+input[type="submit"]{
+    background-color: #0065FC;
+    border-radius: 0% 10px 10px 0;
+    color: rgb(250, 246, 246);
+    border:none;
+
+}
+
+
+::placeholder{
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+}
+
+.info-filtre{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 30px;
+  /*  margin-bottom: 20px; */
+}
+
+.Filtre_1:hover{
+    background-color: #a5bcdf;
+}
+
+
+.Filtre_1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+    border-radius: 30px;
+    padding-left: 20px;
+    border:solid 2px rgb(231, 225, 225);
+}
+
+.info-bar{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.info_icone{
+    border: solid 2px rgb(231, 225, 225);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -74,6 +167,14 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements img{
+    width: 350px;
+    height: 100px;
+    border-top-left-radius: 10%;
+    border-top-right-radius:10%;
+
 }
 
 /****** Populaires ***********/
@@ -121,6 +222,63 @@ a {
     margin-bottom: 5px;
 }
 
+
+/****** Activité a Maeseille ***********/
+
+.Activité-titre{
+    display: flex;
+    justify-content:flex-start;
+}
+
+
+.Activité{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Activité_galerie{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.Activité .boite-1 {
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    box-shadow: 6px 6px 25px rgb(219, 213, 213);
+}
+
+
+.boite-1 .card-title {
+    display: flex;
+    margin-left: 10px;
+}
+
+.Activité img{
+    object-fit: cover;
+    width: 250px;
+    height: 350px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+/****** bas-de-page ***********/
+.bas-de-page{
+    display: flex;
+    flex-direction: row ;
+    justify-content: left;
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 0px;
+    box-sizing: border-box;
+    gap: 150px;
+}
+
+.bas-de-page ul{
+    list-style-type: none;
+}
 
 
 
