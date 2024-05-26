@@ -183,10 +183,14 @@ input[type="submit"]{
     border:solid 2px rgb(231, 225, 225);
 }
 
-.colonne_filtre{
+.colonne_filtre {
     display: flex;
-    gap: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
 }
+
+
+
 
 .info-bar{
     display: flex;
@@ -226,7 +230,7 @@ input[type="submit"]{
 }
 
 .hebergements-title{
-    margin-bottom: 33px;
+    margin-bottom: 5px;
 }
 
 .hebergements-cards{
@@ -237,7 +241,8 @@ input[type="submit"]{
 
 .hebergements-rows{
     display: flex;
-    gap: 33px;
+    gap: 15px;
+    margin-top: 30px;
 }
 
 .hebergements-rows a{
@@ -281,7 +286,7 @@ input[type="submit"]{
 }
 
 .hebergements h4{
-    margin: 50px 0 0 0;
+    margin: 30px 0 0 0;
     display: inline-block;
 }
 
@@ -418,6 +423,11 @@ input[type="submit"]{
 @media (max-width: 1024px) {
 
 
+.section-title {
+    margin: 0;
+    font-size: 16px;
+}
+
 
 /**** header ****/
 .logo img{
@@ -435,10 +445,12 @@ input[type="submit"]{
 /****** Info ******************/
 
 .info-titre{
-    width: 50%;
+    font-size: 63%;
 }
 
-
+.info-titre p{
+    margin-top: 25px;
+}
 
 /****** Info-filtre ***********/
 
@@ -455,11 +467,12 @@ input[type="submit"]{
 
 
 
-.colonne_filtre {
-    display: flex;
-    gap: 15px;
 
+
+.colonne_filtre h3{
+    width: 100%;
 }
+
 
 .Filtre_1{
     padding-left: 5px;
@@ -513,6 +526,12 @@ input[type="submit"]{
     display: flex;
 }
 
+
+.Activité a{
+    width: 30%;
+}
+
+
 .Activité-titre{
     padding-bottom: 25px;
 }
@@ -523,17 +542,15 @@ input[type="submit"]{
 
 }
 
-.boite-1{
 
-}
 
 .Activité img {
-    width: 40%;
+  /*  width: 40%;  */
     height: 170px;
 }
 
 .card-title{
-font-size: 10px;
+/*  font-size: 10px; */
 margin-top: 15px;
 margin-bottom: 20px;
 }
@@ -560,7 +577,70 @@ margin-bottom: 20px;
 
 }
 
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+.section-title {
+    margin: 0;
+    font-size: 12px;
+}
+
+
+/**** Header  ***********/
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo img{
+    width:80px;   
+    height:20px;
+    padding-top: 20px;
+}
+
+
+.logo ul{
+    display: flex;
+    gap: 50px;
+}
+
+
+
+
+/**** Activité  ***********/
+
+
+
+.Activité_galerie{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+
+
+/**** footer  ***********/
+
+
+.bas-de-page{
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+}
+
+.bas-de-page ul{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
 }
