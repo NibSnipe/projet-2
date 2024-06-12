@@ -95,12 +95,13 @@ a {
 }
 
 
-
 /****** Info ***********/
 
 
 input.bordure {
-    border: none;
+        border: solid 1px;
+        border-color: var(--main-bg-color);
+        height:100%;
 }
 
 
@@ -110,7 +111,7 @@ input[type="submit"]{
     color: rgb(250, 246, 246);
     border:none;
     height: 30px;
-    
+    margin-left: -4px;    
 }
 
 
@@ -125,8 +126,6 @@ input[type="submit"]{
     position: relative;
     top: -15px;
 }
-
-
 
 
 
@@ -154,6 +153,8 @@ input[type="submit"]{
     border-radius: 10px 0px 0px 10px;
     background-color: var(--main-bg-color) ;
     margin-right: -30px;
+    margin-top: 10px;
+    margin-bottom: 3px;
 }
 
 button {
@@ -167,7 +168,7 @@ button {
 
 
 .Filtre_1:hover{
-    background-color: #a5bcdf;
+    background-color: var(--filter-bg-color) ;
 }
 
 .info-filtre{
@@ -184,16 +185,16 @@ button {
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 140px;
+    padding: 0 10px 0 10px;
     border-radius: 30px;
-    padding-left: 20px;
-    border:solid 2px rgb(231, 225, 225);
+    border:solid 2px var(--main-bg-color);
 }
 
-.colonne_filtre {
+.ligne_filtre {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 
@@ -208,7 +209,7 @@ button {
 }
 
 .info_icone{
-    border: solid 2px rgb(231, 225, 225);
+    border: solid 2px var(--main-bg-color);
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -476,14 +477,14 @@ button {
 
 
 
-.colonne_filtre h3{
+.ligne_filtre h3{
     width: 100%;
 }
 
 
 .Filtre_1{
     padding-left: 5px;
-    width: 140px;
+
 }
 
 .info-bar{
@@ -549,7 +550,9 @@ button {
 
 }
 
-
+.boite-1 h3 {
+    font-size: 13px;
+}
 
 .Activité img {
   /*  width: 40%;  */
@@ -638,17 +641,21 @@ body{
 .logo ul{
     display: flex;
     border-bottom:  solid 2px var(--main-bg-color);
-    padding-bottom: 10px;
+    width: 100%;
+    gap: 0;
+    justify-content: space-around;
+    padding-left: 0;
 }
 
 .logo li{
     display: flex;
-    padding-bottom: 13px;
-
+    padding-bottom:13px;
+    width: 50%;
+    justify-content: space-around;
 }
 
 .logo li:hover{
-    width: 100%;
+    width: 50%;
     border-top: none;
     color: var(--main-color);
     border-bottom:  solid 2px var(--main-color);
@@ -656,8 +663,8 @@ body{
     padding-bottom: 12px;
 }
 
+
 .logo a:hover {
-    width: 100%;
     border-top: none;
     color: var(--main-color);
     padding-top: 0;
@@ -691,8 +698,26 @@ body{
     margin-left: 10px;
 }
 
+.Filtre_1{
+    width: 42%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+
+}
+
+.info-filtre p{
+    font-size: 13px;
+}
+
 .info-bar {
     padding-bottom: 0px;
+}
+
+.info-gps{
+    margin-top: 1px;
+    margin-bottom: -5px;
 }
 
 input.bordure {
@@ -776,7 +801,9 @@ form{
 
 }
 
-
+.boite-1 h3 {
+    font-size: 14px;
+}
 
 /**** footer  ***********/
 
