@@ -610,8 +610,9 @@ body{
     background-color: var(--main-color);
 
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 12px;
     width: 40px;
+    margin-left: -5px
 }
 
 .fa-magnifying-glass{
@@ -674,14 +675,14 @@ body{
 /**** Info  ***********/
 
 .info-recherche{
-    padding-left:8% ;
+    padding-left:52px ;
 }
 
 .info-titre {
     padding-left: 8%;
 }
 
-.info-titre h2{
+.info-titre h1{
     font-size: 21px;
 }
 
@@ -690,12 +691,21 @@ body{
 }
 
 
+.ligne_filtre h3 {
+    width: 80%;
+}
+
 .info-filtre{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 100%;
-    margin-left: 10px;
+    width: 94%;
+    margin-left: 20px;
+}
+
+
+.Filtre_1 .fa-solid{
+    padding-left: 15px;
 }
 
 .Filtre_1{
@@ -704,7 +714,6 @@ body{
     align-items: center;
     gap: 10px;
     padding: 0;
-
 }
 
 .info-filtre p{
@@ -790,7 +799,7 @@ form{
 
 
 .Activité a {
-    width: 100%;
+    width: 120%;
 }
 
 .Activité_galerie{
@@ -810,6 +819,7 @@ form{
 
 .bas-de-page{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 0;
     width: 100%;
