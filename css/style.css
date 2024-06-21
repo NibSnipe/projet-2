@@ -206,6 +206,7 @@ button {
     gap: 20px;
     padding-top: 2%;
     padding-bottom: 2%;
+    align-items: center;
 }
 
 .info_icone{
@@ -468,16 +469,10 @@ button {
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
-    margin-left: 10px;
 }
 
 
-
-
-
-
-
-.ligne_filtre h3{
+.ligne_filtre h2{
     width: 100%;
 }
 
@@ -691,7 +686,7 @@ body{
 }
 
 
-.ligne_filtre h3 {
+.ligne_filtre h2 {
     width: 80%;
 }
 
@@ -700,7 +695,7 @@ body{
     align-items: flex-start;
     flex-direction: column;
     width: 94%;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 
@@ -722,6 +717,8 @@ body{
 
 .info-bar {
     padding-bottom: 0px;
+    width: 80%;
+
 }
 
 .info-gps{
@@ -796,10 +793,14 @@ form{
 
 /**** Activité  ***********/
 
+.Activité {
+    width: 80%;
 
+}
 
 .Activité a {
-    width: 120%;
+    width: 100%;
+    
 }
 
 .Activité_galerie{
@@ -807,6 +808,7 @@ form{
     flex-direction: column;
     gap: 10px;
     flex-wrap: wrap;
+    width: 100%;
 
 }
 
@@ -829,9 +831,6 @@ form{
     display: flex;
     flex-direction: column;
     gap: 13px;
-
-
 }
-
 
 }
